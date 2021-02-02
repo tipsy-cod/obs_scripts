@@ -6,9 +6,17 @@
 
 SetBatchLines -1
 
-global app := { author: "TiPSY", licence: "MIT", ahk: "1.1.32.02", version: "21.01.26", name: "spotify" }
+global app := { author: "TiPSY", licence: "MIT", ahk: "1.1.32.02", version: "21.02.02", name: "spotify" }
 
 global FilePath := "D:\OBS\Spotify.txt"
+
+
+; CONTROL MEDIA KEYS ============================================================================================================
+
+#Numpad7::Media_Prev
+#Numpad8::Media_Play_Pause
+#Numpad9::Media_Next
+
 
 ; SCRIPT ========================================================================================================================
 
@@ -39,5 +47,6 @@ FileWrite(FileName, FileInput)
 	}
 	return false
 }
+
 
 ; ===============================================================================================================================
